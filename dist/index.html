@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Search Box</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+    }
+    body {
+      background: #333;
+      font-family: sans-serif;
+    }
+    .container {
+      width: 460px;
+      margin: 20vh auto 0;
+    }
+    .input-container {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      position: relative;
+    }
+    .input-container * {
+      display: block;
+      font-size: 16px;
+      color: #333;
+    }
+    input {
+      background: #ddd;
+      border: none;
+      flex-grow: 1;
+    }
+    input,
+    input:active,
+    input:focus {
+      outline: none;
+    }
+    .fa-magnifying-glass {
+      color: #666;
+      font-size: 16px;
+    }
+    .search-icon {
+      cursor: pointer;
+      /* border-radius: 0px; */
+      border: none;
+      width: 30px;
+      background-color: #eee;
+    }
+    #polling {
+      background-color: #eee;
+      position: absolute;
+      width: 460px;
+      top: 30px;
+    }
+    #polling li {
+      padding: 0.25rem 1rem;
+      border-bottom: 1px solid #ccc;
+      color: #333;
+    }
+    #results {
+      color: #eee;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    #results h2 {
+      margin-bottom: 1rem;
+    }
+    #results li {
+      margin: 0.25rem 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input type="text" name="search" id="search" />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div id="polling">
+          <ul>
+            <li>this is test</li>
+            <li>this is test</li>
+            <li>this is test</li>
+          </ul>
+        </div>
+      </div>
+      <div id="results">
+        <h2>Search results</h2>
+        <ul>
+          <li>this is test</li>
+          <li>this is test</li>
+          <li>this is test</li>
+          <li>this is test</li>
+          <li>this is test</li>
+          <li>this is test</li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
