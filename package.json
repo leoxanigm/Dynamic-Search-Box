@@ -1,0 +1,19 @@
+{
+  "name": "dynamic-search-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoxanigm/Dynamic-Search-Box.git"
+  },
+  "author": "leoxanigm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoxanigm/Dynamic-Search-Box/issues"
+  },
+  "homepage": "https://github.com/leoxanigm/Dynamic-Search-Box#readme"
+}
